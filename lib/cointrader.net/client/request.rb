@@ -11,6 +11,10 @@ module Cointrader
 
     protected
 
+    def join_params params, *names
+      names.map { |name| params[name] }.compact.join('/').downcase
+    end
+
     def request(method, path, body={})
       response = hmac_request(method, path, body)
 

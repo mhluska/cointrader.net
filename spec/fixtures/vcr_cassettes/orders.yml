@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://private-anon-b5aa2a7bf-cointrader.apiary-mock.com/api4/stats/orders/btcusd/all/20
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Apiary-Ratelimit-Limit:
+      - '120'
+      X-Apiary-Ratelimit-Remaining:
+      - '119'
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '2586'
+      Etag:
+      - W/"M/h32uJf7tbZczmfVofE5A=="
+      Date:
+      - Sun, 22 Feb 2015 18:42:01 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPG1ldGEgY2hhcnNl
+        dD0idXRmLTgiPgo8dGl0bGU+YXBpYXJ5Lmlv4oCUNDA04oCUTm8gUmVzb3Vy
+        Y2UgRm91bmQhPC90aXRsZT4KPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVm
+        PSJodHRwczovL2FwaWFyeS5hLnNzbC5mYXN0bHkubmV0L2Fzc2V0cy9jc3Mv
+        bm9ybWFsaXplLWMxYTYwMTUwNDBlZjEyMDEuY3NzIj4KPGxpbmsgcmVsPSJz
+        dHlsZXNoZWV0IiBocmVmPSJodHRwczovL2FwaWFyeS5hLnNzbC5mYXN0bHku
+        bmV0L2Fzc2V0cy9jc3MvZXJyb3ItNTEzOWJmNDAxYzk3OTJhYy5jc3MiPgo8
+        Ym9keT4KPGRpdiBpZD0iYmciPjwvZGl2PgogPGRpdiBpZD0ibWVzc2FnZSI+
+        CiAgPGgxPlRoZSByZXNvdXJjZSB5b3UncmUgbG9va2luZyBmb3IgZG9lc24n
+        dCBleGlzdC4gPGJyPlBsZWFzZSBjaGVjayB0aGUgPGEgaHJlZj0iaHR0cDov
+        L2RvY3MuY29pbnRyYWRlci5hcGlhcnkuaW8vIj5BUEkgZG9jdW1lbnRhdGlv
+        bjwvYT4gb3IgaGF2ZSBhIGxvb2sgb24gYXZhaWxhYmxlIHJlc291cmNlcyBi
+        ZWxvdy48L2gxPgogIDxwPjwvcD4KICA8b2w+CiAgICAgICAgICA8c2VjdGlv
+        bj48aDI+Q3VycmVuY2llczwvaDI+CiAgICAgICAgICAgICAgPC9zZWN0aW9u
+        PgogICAgICAgICAgPHNlY3Rpb24+PGgyPlB1YmxpYyBNZXRob2RzIC0gR0VU
+        PC9oMj4KICAgICAgICAgICAgICAgICAgPGxpPjxiPkdFVDwvYj4gL2FwaTQv
+        c3RhdHMvc3ltYm9sPC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPkdF
+        VDwvYj4gL2FwaTQvc3RhdHMvZGFpbHkve2N1cnJlbmN5X3BhaXJ9PC9saT4K
+        ICAgICAgICAgICAgICAgICAgPGxpPjxiPkdFVDwvYj4gL2FwaTQvc3RhdHMv
+        d2Vla2x5L3tjdXJyZW5jeV9wYWlyfTwvbGk+CiAgICAgICAgICAgICAgICAg
+        IDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL29yZGVycy97Y3VycmVuY3lf
+        cGFpcn0ve2J1eXxzZWxsfGFsbH0ve2xpbWl0fTwvbGk+CiAgICAgICAgICAg
+        ICAgICAgIDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL2hpZ2gve2N1cnJl
+        bmN5X3BhaXJ9PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPkdFVDwv
+        Yj4gL2FwaTQvc3RhdHMvbG93L3tjdXJyZW5jeV9wYWlyfTwvbGk+CiAgICAg
+        ICAgICAgICAgICAgIDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL2J1eXBy
+        aWNlL3tjdXJyZW5jeV9wYWlyfS97YW1vdW50fTwvbGk+CiAgICAgICAgICAg
+        ICAgICAgIDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL3NlbGxwcmljZS97
+        Y3VycmVuY3lfcGFpcn0ve3F1YW50aXR5fTwvbGk+CiAgICAgICAgICAgICAg
+        ICAgIDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL3RyYWRlcy97Y3VycmVu
+        Y3lfcGFpcn0ve2xpbWl0fS97b2Zmc2V0fTwvbGk+CiAgICAgICAgICAgICAg
+        ICAgIDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL21hcmtldC97Y3VycmVu
+        Y3lfcGFpcn0ve2xpbWl0fS97b2Zmc2V0fTwvbGk+CiAgICAgICAgICAgICAg
+        PC9zZWN0aW9uPgogICAgICAgICAgPHNlY3Rpb24+PGgyPkF1dGhlbnRpY2F0
+        ZWQgTWV0aG9kcyAtIFBPU1Q8L2gyPgogICAgICAgICAgICAgICAgICA8bGk+
+        PGI+UE9TVDwvYj4gL2FwaTQvYWNjb3VudC9iYWxhbmNlPC9saT4KICAgICAg
+        ICAgICAgICAgICAgPGxpPjxiPlBPU1Q8L2I+IC9hcGk0L2FjY291bnQvZmVl
+        czwvbGk+CiAgICAgICAgICAgICAgICAgIDxsaT48Yj5QT1NUPC9iPiAvYXBp
+        NC9hY2NvdW50L2xpc3RiYW5rPC9saT4KICAgICAgICAgICAgICAgICAgPGxp
+        PjxiPlBPU1Q8L2I+IC9hcGk0L2FjY291bnQvYnRjYWRkcmVzczwvbGk+CiAg
+        ICAgICAgICAgICAgICAgIDxsaT48Yj5QT1NUPC9iPiAvYXBpNC9hY2NvdW50
+        L3dpdGhkcmF3PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPlBPU1Q8
+        L2I+IC9hcGk0L2FjY291bnQvaGlzdG9yeTwvbGk+CiAgICAgICAgICAgICAg
+        ICAgIDxsaT48Yj5QT1NUPC9iPiAvYXBpNC9vcmRlci97Y3VycmVuY3lfcGFp
+        cn0vYnV5PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPlBPU1Q8L2I+
+        IC9hcGk0L29yZGVyL3tjdXJyZW5jeV9wYWlyfS9zZWxsPC9saT4KICAgICAg
+        ICAgICAgICAgICAgPGxpPjxiPlBPU1Q8L2I+IC9hcGk0L29yZGVyL3tjdXJy
+        ZW5jeV9wYWlyfS9saXN0PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxi
+        PlBPU1Q8L2I+IC9hcGk0L29yZGVyL3tjdXJyZW5jeV9wYWlyfS9jYW5jZWw8
+        L2xpPgogICAgICAgICAgICAgICAgICA8bGk+PGI+UE9TVDwvYj4gL2FwaTQv
+        b3JkZXIve2N1cnJlbmN5X3BhaXJ9L2NhbmNlbGFsbDwvbGk+CiAgICAgICAg
+        ICAgICAgICAgIDxsaT48Yj5QT1NUPC9iPiAvYXBpNC9vcmRlci97Y3VycmVu
+        Y3lfcGFpcn0vbWFya2V0YnV5PC9saT4KICAgICAgICAgICAgICAgICAgPGxp
+        PjxiPlBPU1Q8L2I+IC9hcGk0L29yZGVyL3tjdXJyZW5jeV9wYWlyfS9tYXJr
+        ZXRzZWxsPC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPlBPU1Q8L2I+
+        IC9hcGk0L2FjY291bnQvdHJhZGVoaXN0b3J5L3tjdXJyZW5jeV9wYWlyfTwv
+        bGk+CiAgICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICA8L29sPgogIDwv
+        ZGl2Pgo8L2JvZHk+CjwvaHRtbD4K
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 18:42:52 GMT
+recorded_with: VCR 2.9.3

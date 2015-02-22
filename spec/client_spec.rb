@@ -18,7 +18,6 @@ describe Cointrader::Client do
       it 'returns 24 hour sliding statistics' do
         VCR.use_cassette('stats_24h') do
           response = subject.stats_24h
-
           expect_success(response)
         end
       end
@@ -29,7 +28,16 @@ describe Cointrader::Client do
       it 'returns 7 day sliding statistics' do
         VCR.use_cassette('stats_7d') do
           response = subject.stats_7d
+          expect_success(response)
+        end
+      end
+    end
 
+    # TODO(maros): Add more detailed tests.
+    describe '#orders' do
+      it 'returns open orders' do
+        VCR.use_cassette('orders') do
+          response = subject.orders
           expect_success(response)
         end
       end
