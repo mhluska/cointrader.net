@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://private-anon-b5aa2a7bf-cointrader.apiary-mock.com/api4/stats/symbol
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Apiary-Ratelimit-Limit:
+      - '120'
+      X-Apiary-Ratelimit-Remaining:
+      - '115'
+      X-Apiary-Transaction-Id:
+      - 54ea1b699301760300cf70fc
+      Date:
+      - Sun, 22 Feb 2015 18:09:45 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "success":true,
+            "message":"Supported Symbols",
+            "data":
+            [
+            {
+                "name":"Bitcoin (BTC)",
+                "symbol":"XBT",
+                "description":"Basic Bitcoin-demoninated account",
+                "decimals":"8"
+            },
+            {
+                "name":"U.S. Dollar (USD)",
+                "symbol":"USD","description":"Basic USD-denominated account",
+                "decimals":"2"
+            },
+            {
+                "name":"Canadian Dollar (CAD)",
+                "symbol":"CAD",
+                "description":"Basic CAD-denominated account",
+                "decimals":"2"
+            }
+            ]
+        }
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 18:10:37 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://private-anon-b5aa2a7bf-cointrader.apiary-mock.com/api4/account/balance
+    body:
+      encoding: UTF-8
+      string: '{"secret":"9KZifEvwZDp4ORSEXRFhp16o7okkCAJUpNXurEpx6a5F","t":"1424628637323"}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      X-Auth:
+      - gl42QPKWBCb03xFVMvZXrD3lH4zUv5fUbhE12XV2HWc3
+      X-Auth-Hash:
+      - 3985fc74c5cfe9343b4074e36f5b8864714a7781ae16fd19147d2dbdeb37ad48
+      Content-Length:
+      - '77'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Apiary-Ratelimit-Limit:
+      - '120'
+      X-Apiary-Ratelimit-Remaining:
+      - '114'
+      X-Apiary-Transaction-Id:
+      - 54ea1b6a9301760300cf70fd
+      Date:
+      - Sun, 22 Feb 2015 18:09:46 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: |2-
+         {
+         "success":true,
+         "message":"Account Balances",
+         "data":
+            {
+            "BTC":
+            {
+                "available":"199.99500000",
+                "on_hold":"0.00000000",
+                "total":"199.99500000"
+            },
+            "USD":
+            {
+                "available":"49923.94",
+                "on_hold":"0.00",
+                "total":"49923.94"}
+            }
+            "CAD":
+            {
+                "available":"1233.00",
+                "on_hold":"0.00",
+                "total":"1233.00"
+            }
+        }
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 18:10:37 GMT
+recorded_with: VCR 2.9.3

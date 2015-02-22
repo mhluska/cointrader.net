@@ -26,7 +26,8 @@ Cointrader.configure do |c|
   c.api_secret = 'API_SECRET'
 end
 
-puts Cointrader.balance
+client = Cointrader::Client.new
+puts client.balance
 ```
 
 ## Contributing
