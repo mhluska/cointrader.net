@@ -1,6 +1,6 @@
 # Cointrader.net
 
-TODO: Write a gem description
+Ruby wrapper for the Cointrader.net API
 
 ## Installation
 
@@ -20,7 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Cointrader.configure do |c|
+  c.api_key    = 'API_KEY'
+  c.api_secret = 'API_SECRET'
+end
+
+puts Cointrader.balance
+```
 
 ## Contributing
 
