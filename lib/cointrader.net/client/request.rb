@@ -18,11 +18,12 @@ module Cointrader
     def request(method, path, body={})
       response = hmac_request(method, path, body)
 
-      # The API sucks and we need to repair JSON sometimes.
+      # The API sucks so we need to repair JSON sometimes.
       case path
       when '/account/balance'
         response.gsub!(/\s/, '')        # Remove whitespace.
         response.gsub!(/}}(?!$)/, '},') # Replace bracket with comma not at the end.
+        response.gsub!('},}', '}}')     # Remove trailing comma.
         response.gsub!(/}}$/, '}}}')    # Add a bracket at the end.
       end
 
