@@ -24,6 +24,9 @@ Or install it yourself as:
 Cointrader.configure do |c|
   c.api_key    = 'API_KEY'
   c.api_secret = 'API_SECRET'
+
+  # Sandbox API
+  # c.api_url = 'https://private-anon-b5aa2a7bf-cointrader.apiary-mock.com/api4'
 end
 
 client = Cointrader::Client.new
