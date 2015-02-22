@@ -12,6 +12,28 @@ describe Cointrader::Client do
         end
       end
     end
+
+    # TODO(maros): Add more detailed tests.
+    describe '#stats_24h' do
+      it 'returns 24 hour sliding statistics' do
+        VCR.use_cassette('stats_24h') do
+          response = subject.stats_24h
+
+          expect_success(response)
+        end
+      end
+    end
+
+    # TODO(maros): Add more detailed tests.
+    describe '#stats_7d' do
+      it 'returns 7 day sliding statistics' do
+        VCR.use_cassette('stats_7d') do
+          response = subject.stats_7d
+
+          expect_success(response)
+        end
+      end
+    end
   end
 
   describe 'account' do

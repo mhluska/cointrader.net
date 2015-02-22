@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://private-anon-b5aa2a7bf-cointrader.apiary-mock.com/api4/stats/daily/BTCUSD
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Apiary-Ratelimit-Limit:
+      - '120'
+      X-Apiary-Ratelimit-Remaining:
+      - '119'
+      X-Apiary-Transaction-Id:
+      - 54ea1e3dcdf6dc03006f6fc1
+      Date:
+      - Sun, 22 Feb 2015 18:21:49 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "success":true,
+            "message":"24hr BTCUSD Stats",
+            "data":
+            {
+                "BTCUSD":
+                {
+                "lastTradePrice":"453.00",
+                "bid":"420.00",
+                "offer":"426.22",
+                "high":"453.00",
+                "low":"420.00",
+                "average":"429.88",
+                "volume":"38.26969417"
+                }
+            }
+        }
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 18:22:40 GMT
+recorded_with: VCR 2.9.3
