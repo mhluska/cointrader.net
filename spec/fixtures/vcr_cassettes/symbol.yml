@@ -5,7 +5,7 @@ http_interactions:
     uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/stats/symbol
     body:
       encoding: UTF-8
-      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432345442031"}'
+      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432346097904"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -16,7 +16,7 @@ http_interactions:
       X-Auth:
       - hCkVvzR4Nuc6dbuN0biMFSqMqSfc1f1grhXqoaQAlq1y
       X-Auth-Hash:
-      - 00d394e2c6800fea9d1757c463367b47f92cc6b53290ca312acee9a531c9420e
+      - 3024406fa2604dac33c579b663fb5e258dd37f2baa37c44839a1c4d5503041a3
       Content-Length:
       - '77'
       User-Agent:
@@ -41,9 +41,9 @@ http_interactions:
       Access-Control-Max-Age:
       - '10'
       X-Apiary-Transaction-Id:
-      - 555fdab03edda90300f69d59
+      - 555fdd40d00c360300318162
       Date:
-      - Sat, 23 May 2015 01:41:04 GMT
+      - Sat, 23 May 2015 01:52:00 GMT
       Transfer-Encoding:
       - chunked
       Via:
@@ -76,5 +76,5 @@ http_interactions:
             ]
         }
     http_version: 
-  recorded_at: Sat, 23 May 2015 01:44:02 GMT
+  recorded_at: Sat, 23 May 2015 01:54:58 GMT
 recorded_with: VCR 2.9.3
