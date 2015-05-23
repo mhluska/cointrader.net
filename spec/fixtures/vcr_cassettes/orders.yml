@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: get
-    uri: https://private-anon-b5aa2a7bf-cointrader.apiary-mock.com/api4/stats/orders/btcusd/all/20
+    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/stats/orders/BTCUSD/all/20
     body:
       encoding: UTF-8
-      string: "{}"
+      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432344742945"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -13,8 +13,12 @@ http_interactions:
       - gzip, deflate
       Content-Type:
       - application/json
+      X-Auth:
+      - hCkVvzR4Nuc6dbuN0biMFSqMqSfc1f1grhXqoaQAlq1y
+      X-Auth-Hash:
+      - 811a6ee04698a68e320e4bd089e1d805de446f2ca15955869095aaa83d7a4a1a
       Content-Length:
-      - '2'
+      - '77'
       User-Agent:
       - Ruby
   response:
@@ -29,15 +33,15 @@ http_interactions:
       X-Apiary-Ratelimit-Limit:
       - '120'
       X-Apiary-Ratelimit-Remaining:
-      - '119'
+      - '116'
       Content-Type:
       - text/html; charset=utf-8
       Content-Length:
-      - '2586'
+      - '2660'
       Etag:
-      - W/"M/h32uJf7tbZczmfVofE5A=="
+      - W/"zVuw45vE0DsxkZqn5802FQ=="
       Date:
-      - Sun, 22 Feb 2015 18:42:01 GMT
+      - Sat, 23 May 2015 01:29:25 GMT
       Via:
       - 1.1 vegur
     body:
@@ -90,17 +94,19 @@ http_interactions:
         cn0vYnV5PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPlBPU1Q8L2I+
         IC9hcGk0L29yZGVyL3tjdXJyZW5jeV9wYWlyfS9zZWxsPC9saT4KICAgICAg
         ICAgICAgICAgICAgPGxpPjxiPlBPU1Q8L2I+IC9hcGk0L29yZGVyL3tjdXJy
-        ZW5jeV9wYWlyfS9saXN0PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxi
-        PlBPU1Q8L2I+IC9hcGk0L29yZGVyL3tjdXJyZW5jeV9wYWlyfS9jYW5jZWw8
+        ZW5jeV9wYWlyfS9zdGF0dXM8L2xpPgogICAgICAgICAgICAgICAgICA8bGk+
+        PGI+UE9TVDwvYj4gL2FwaTQvb3JkZXIve2N1cnJlbmN5X3BhaXJ9L2xpc3Q8
         L2xpPgogICAgICAgICAgICAgICAgICA8bGk+PGI+UE9TVDwvYj4gL2FwaTQv
-        b3JkZXIve2N1cnJlbmN5X3BhaXJ9L2NhbmNlbGFsbDwvbGk+CiAgICAgICAg
-        ICAgICAgICAgIDxsaT48Yj5QT1NUPC9iPiAvYXBpNC9vcmRlci97Y3VycmVu
-        Y3lfcGFpcn0vbWFya2V0YnV5PC9saT4KICAgICAgICAgICAgICAgICAgPGxp
-        PjxiPlBPU1Q8L2I+IC9hcGk0L29yZGVyL3tjdXJyZW5jeV9wYWlyfS9tYXJr
-        ZXRzZWxsPC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPlBPU1Q8L2I+
-        IC9hcGk0L2FjY291bnQvdHJhZGVoaXN0b3J5L3tjdXJyZW5jeV9wYWlyfTwv
-        bGk+CiAgICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICA8L29sPgogIDwv
-        ZGl2Pgo8L2JvZHk+CjwvaHRtbD4K
+        b3JkZXIve2N1cnJlbmN5X3BhaXJ9L2NhbmNlbDwvbGk+CiAgICAgICAgICAg
+        ICAgICAgIDxsaT48Yj5QT1NUPC9iPiAvYXBpNC9vcmRlci97Y3VycmVuY3lf
+        cGFpcn0vY2FuY2VsYWxsPC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxi
+        PlBPU1Q8L2I+IC9hcGk0L29yZGVyL3tjdXJyZW5jeV9wYWlyfS9tYXJrZXRi
+        dXk8L2xpPgogICAgICAgICAgICAgICAgICA8bGk+PGI+UE9TVDwvYj4gL2Fw
+        aTQvb3JkZXIve2N1cnJlbmN5X3BhaXJ9L21hcmtldHNlbGw8L2xpPgogICAg
+        ICAgICAgICAgICAgICA8bGk+PGI+UE9TVDwvYj4gL2FwaTQvYWNjb3VudC90
+        cmFkZWhpc3Rvcnkve2N1cnJlbmN5X3BhaXJ9PC9saT4KICAgICAgICAgICAg
+        ICA8L3NlY3Rpb24+CiAgICAgIDwvb2w+CiAgPC9kaXY+CjwvYm9keT4KPC9o
+        dG1sPgo=
     http_version: 
-  recorded_at: Sun, 22 Feb 2015 18:42:52 GMT
+  recorded_at: Sat, 23 May 2015 01:32:23 GMT
 recorded_with: VCR 2.9.3

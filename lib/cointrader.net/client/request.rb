@@ -12,22 +12,19 @@ module Cointrader
     protected
 
     def join_params params, *names
-      names.map { |name| params[name] }.compact.join('/').downcase
+      names.map { |name| params[name] }.compact.join('/')
+    end
+
+    def get_defaults params
+      params.merge({
+        currency_pair: 'BTCUSD',
+        book: 'all',
+        limit: 20
+      })
     end
 
     def request(method, path, body={})
-      response = hmac_request(method, path, body)
-
-      # The API sucks so we need to repair JSON sometimes.
-      case path
-      when '/account/balance'
-        response.gsub!(/\s/, '')        # Remove whitespace.
-        response.gsub!(/}}(?!$)/, '},') # Replace bracket with comma not at the end.
-        response.gsub!('},}', '}}')     # Remove trailing comma.
-        response.gsub!(/}}$/, '}}}')    # Add a bracket at the end.
-      end
-
-      JSON.parse(response)
+      JSON.parse(hmac_request(method, path, body))
     end
 
     def hmac_request method, path, body={}
@@ -36,7 +33,7 @@ module Cointrader
       base    = Cointrader.configuration.api_url || API_URL
       url     = base + path
 
-      if method == :get
+      if method == :get && !body.empty?
         url += '?' + URI.encode_www_form(body)
       else
         api_key    = Cointrader.configuration.api_key

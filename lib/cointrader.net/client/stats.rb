@@ -23,15 +23,5 @@ module Cointrader
       path   = join_params(params, :currency_pair, :book, :limit)
       request(:get, "/stats/orders/#{path}")
     end
-
-    private
-
-    def get_defaults params
-      params.merge({
-        currency_pair: 'BTCUSD',
-        book: 'all',
-        limit: 20
-      })
-    end
   end
 end

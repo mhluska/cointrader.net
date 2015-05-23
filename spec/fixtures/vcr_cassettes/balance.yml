@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://private-anon-b5aa2a7bf-cointrader.apiary-mock.com/api4/account/balance
+    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/account/balance
     body:
       encoding: UTF-8
-      string: '{"secret":"9KZifEvwZDp4ORSEXRFhp16o7okkCAJUpNXurEpx6a5F","t":"1424628637323"}'
+      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432344743245"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -14,9 +14,9 @@ http_interactions:
       Content-Type:
       - application/json
       X-Auth:
-      - gl42QPKWBCb03xFVMvZXrD3lH4zUv5fUbhE12XV2HWc3
+      - hCkVvzR4Nuc6dbuN0biMFSqMqSfc1f1grhXqoaQAlq1y
       X-Auth-Hash:
-      - 3985fc74c5cfe9343b4074e36f5b8864714a7781ae16fd19147d2dbdeb37ad48
+      - 21d30bb9d6005490ecfe110946b2ccbd07be749242ecaadc8bbd52c327d67d25
       Content-Length:
       - '77'
       User-Agent:
@@ -33,11 +33,17 @@ http_interactions:
       X-Apiary-Ratelimit-Limit:
       - '120'
       X-Apiary-Ratelimit-Remaining:
-      - '114'
+      - '115'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
+      Access-Control-Max-Age:
+      - '10'
       X-Apiary-Transaction-Id:
-      - 54ea1b6a9301760300cf70fd
+      - 555fd7f53edda90300f69c0d
       Date:
-      - Sun, 22 Feb 2015 18:09:46 GMT
+      - Sat, 23 May 2015 01:29:25 GMT
       Transfer-Encoding:
       - chunked
       Via:
@@ -45,30 +51,31 @@ http_interactions:
     body:
       encoding: UTF-8
       string: |2-
-         {
-         "success":true,
-         "message":"Account Balances",
-         "data":
             {
-            "BTC":
-            {
-                "available":"199.99500000",
-                "on_hold":"0.00000000",
-                "total":"199.99500000"
-            },
-            "USD":
-            {
-                "available":"49923.94",
-                "on_hold":"0.00",
-                "total":"49923.94"}
-            }
-            "CAD":
-            {
-                "available":"1233.00",
-                "on_hold":"0.00",
-                "total":"1233.00"
-            }
-        }
+                "success":true,
+                "message":"Account Balances",
+                "data":
+                {
+                    "BTC":
+                        {
+                            "available":"5.26240216",
+                            "on_hold":"0.00000000",
+                            "total":"5.26240216"
+                        },
+                    "USD":
+                        {
+                            "available":"0.35",
+                            "on_hold":"0.00",
+                            "total":"0.35"
+                        },
+                    "CAD":
+                        {
+                            "available":"1.41",
+                            "on_hold":"0.00",
+                            "total":"1.41"
+                        }
+                    }
+                }
     http_version: 
-  recorded_at: Sun, 22 Feb 2015 18:10:37 GMT
+  recorded_at: Sat, 23 May 2015 01:32:23 GMT
 recorded_with: VCR 2.9.3

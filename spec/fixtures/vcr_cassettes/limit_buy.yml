@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/stats/daily/BTCUSD
+    method: post
+    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/order/BTCUSD/buy
     body:
       encoding: UTF-8
-      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432344742275"}'
+      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432344743535"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -16,7 +16,7 @@ http_interactions:
       X-Auth:
       - hCkVvzR4Nuc6dbuN0biMFSqMqSfc1f1grhXqoaQAlq1y
       X-Auth-Hash:
-      - 73d263f1ab089f5a8320103593bb0d6fa41b3e75b094fd4fe26454d65156d074
+      - 898a1b605277783216c31b089458e2e0d33b3423bd09cb7f742ee09fc041e30b
       Content-Length:
       - '77'
       User-Agent:
@@ -33,7 +33,7 @@ http_interactions:
       X-Apiary-Ratelimit-Limit:
       - '120'
       X-Apiary-Ratelimit-Remaining:
-      - '118'
+      - '114'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -41,9 +41,9 @@ http_interactions:
       Access-Control-Max-Age:
       - '10'
       X-Apiary-Transaction-Id:
-      - 555fd7f4759c2d0300169fa8
+      - 555fd7f6d00c360300317ef7
       Date:
-      - Sat, 23 May 2015 01:29:24 GMT
+      - Sat, 23 May 2015 01:29:26 GMT
       Transfer-Encoding:
       - chunked
       Via:
@@ -53,21 +53,12 @@ http_interactions:
       string: |-
         {
             "success":true,
-            "message":"24hr BTCUSD Stats",
+            "message":"Buy Order Created",
             "data":
             {
-                "BTCUSD":
-                {
-                "lastTradePrice":"453.00",
-                "bid":"420.00",
-                "offer":"426.22",
-                "high":"453.00",
-                "low":"420.00",
-                "average":"429.88",
-                "volume":"38.26969417"
-                }
+                "id":"2222321"
             }
         }
     http_version: 
-  recorded_at: Sat, 23 May 2015 01:32:22 GMT
+  recorded_at: Sat, 23 May 2015 01:32:24 GMT
 recorded_with: VCR 2.9.3

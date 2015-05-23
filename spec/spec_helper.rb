@@ -21,5 +21,5 @@ end
 Cointrader.configure do |config|
   config.api_key    = ENV['API_KEY']
   config.api_secret = ENV['API_SECRET']
-  config.api_url    = 'https://private-anon-b5aa2a7bf-cointrader.apiary-mock.com/api4'
+  config.api_url    = 'https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4'
 end

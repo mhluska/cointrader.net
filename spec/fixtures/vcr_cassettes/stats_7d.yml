@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: get
-    uri: https://private-anon-b5aa2a7bf-cointrader.apiary-mock.com/api4/stats/weekly/BTCUSD
+    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/stats/weekly/BTCUSD
     body:
       encoding: UTF-8
-      string: "{}"
+      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432344742653"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -13,8 +13,12 @@ http_interactions:
       - gzip, deflate
       Content-Type:
       - application/json
+      X-Auth:
+      - hCkVvzR4Nuc6dbuN0biMFSqMqSfc1f1grhXqoaQAlq1y
+      X-Auth-Hash:
+      - 5a17dd87ba728e522fbabb8852657de00f50da63b74c5e886611baf3e71affa4
       Content-Length:
-      - '2'
+      - '77'
       User-Agent:
       - Ruby
   response:
@@ -29,11 +33,17 @@ http_interactions:
       X-Apiary-Ratelimit-Limit:
       - '120'
       X-Apiary-Ratelimit-Remaining:
-      - '118'
+      - '117'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
+      Access-Control-Max-Age:
+      - '10'
       X-Apiary-Transaction-Id:
-      - 54ea1e3dcdf6dc03006f6fc2
+      - 555fd7f5759c2d0300169fa9
       Date:
-      - Sun, 22 Feb 2015 18:21:49 GMT
+      - Sat, 23 May 2015 01:29:25 GMT
       Transfer-Encoding:
       - chunked
       Via:
@@ -59,5 +69,5 @@ http_interactions:
             }
         }
     http_version: 
-  recorded_at: Sun, 22 Feb 2015 18:22:41 GMT
+  recorded_at: Sat, 23 May 2015 01:32:22 GMT
 recorded_with: VCR 2.9.3
