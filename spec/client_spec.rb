@@ -61,7 +61,7 @@ describe Cointrader::Client do
     describe '#limit_buy' do
       it 'returns an order' do
         VCR.use_cassette('limit_buy') do
-          response = subject.limit_buy
+          response = subject.limit_buy(total_quantity: 10, price: 1)
 
           expect_success(response)
           expect(response['data']['id']).not_to be_nil
@@ -72,7 +72,7 @@ describe Cointrader::Client do
     describe '#limit_sell' do
       it 'returns an order' do
         VCR.use_cassette('limit_sell') do
-          response = subject.limit_sell
+          response = subject.limit_sell(total_quantity: 10, price: 1)
 
           expect_success(response)
           expect(response['data']['id']).not_to be_nil
