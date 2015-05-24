@@ -17,7 +17,7 @@ module Cointrader
 
     def get_defaults params
       params.merge({
-        currency_pair: DEFAULT_CURRENCY_PAIR,
+        currency_pair: Client::DEFAULT_CURRENCY_PAIR,
         book: 'all',
         limit: 20
       })
