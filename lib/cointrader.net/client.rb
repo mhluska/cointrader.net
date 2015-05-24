@@ -5,6 +5,8 @@ require_relative 'client/order'
 
 module Cointrader
   class Client
+    DEFAULT_CURRENCY_PAIR = 'BTCUSD'
+
     include Cointrader::Request
     include Cointrader::Stats
     include Cointrader::Account
