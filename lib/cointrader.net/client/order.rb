@@ -9,5 +9,10 @@ module Cointrader
       params = get_defaults(params)
       request(:post, "/order/#{params[:currency_pair]}/sell", total_quantity: params[:total_quantity], price: params[:price])
     end
+
+    def cancel params={}
+      params = get_defaults(params)
+      request(:post, "/order/#{params[:currency_pair]}/cancel")
+    end
   end
 end

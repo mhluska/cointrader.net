@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/order/BTCUSD/cancel
+    body:
+      encoding: UTF-8
+      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432487211197"}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      X-Auth:
+      - hCkVvzR4Nuc6dbuN0biMFSqMqSfc1f1grhXqoaQAlq1y
+      X-Auth-Hash:
+      - 7b4dd8cb2dd2a1a4c95e3d4c1a9b3c981f7bd55f6889c33128bab7a05bd23cf8
+      Content-Length:
+      - '77'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Apiary-Ratelimit-Limit:
+      - '120'
+      X-Apiary-Ratelimit-Remaining:
+      - '119'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
+      Access-Control-Max-Age:
+      - '10'
+      X-Apiary-Transaction-Id:
+      - 5562047865401d0300ea875b
+      Date:
+      - Sun, 24 May 2015 17:03:52 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "success":true,
+            "message":"BTCCAD Order Canceled",
+            "data":
+            {
+                "id":"85",
+                "currency_pair":"BTCAD"
+            }
+        }
+    http_version: 
+  recorded_at: Sun, 24 May 2015 17:06:52 GMT
+recorded_with: VCR 2.9.3
