@@ -71,6 +71,17 @@ describe Cointrader::Client do
         end
       end
     end
+
+    describe '#tradehistory' do
+      it 'returns trade history' do
+        VCR.use_cassette('tradehistory') do
+          response = subject.tradehistory
+
+          expect_success(response)
+          expect(response['data'][0]['fee']).not_to be_nil
+        end
+      end
+    end
   end
 
   describe 'order' do
