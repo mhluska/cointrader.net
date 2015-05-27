@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/order/BTCUSD/list
+    body:
+      encoding: UTF-8
+      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432738146171"}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      X-Auth:
+      - hCkVvzR4Nuc6dbuN0biMFSqMqSfc1f1grhXqoaQAlq1y
+      X-Auth-Hash:
+      - c2c0d4377e1c2bdecce31c5cc85e78624093586f623de4b00f032a48dfed008a
+      Content-Length:
+      - '77'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Apiary-Ratelimit-Limit:
+      - '120'
+      X-Apiary-Ratelimit-Remaining:
+      - '119'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
+      Access-Control-Max-Age:
+      - '10'
+      X-Apiary-Transaction-Id:
+      - 5565d8aa16573e03000ada64
+      Date:
+      - Wed, 27 May 2015 14:46:02 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "success":true,
+            "totalCount":3,
+            "message":"3 Open Orders Found",
+            "data":
+            [
+            {
+                "id":"917",
+                "type":"Buy",
+                "price":"590.00",
+                "quantity":"0.00900000",
+                "total":"5.31",
+                "created":"2014-03-22 02:24:57"
+            },{
+                "id":"916",
+                "type":"Buy",
+                "price":"590.00",
+                "quantity":"0.00900000",
+                "total":"5.31",
+                "created":"2014-03-22 02:24:55"
+            },{
+                "id":"915",
+                "type":"Buy",
+                "price":"590.00",
+                "quantity":"0.00900000",
+                "total":"5.31",
+                "created":"2014-03-22 02:24:53"
+            }]
+        }
+    http_version: 
+  recorded_at: Wed, 27 May 2015 14:49:06 GMT
+recorded_with: VCR 2.9.3

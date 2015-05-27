@@ -14,5 +14,10 @@ module Cointrader
       params = get_defaults(params)
       request(:post, "/order/#{params[:currency_pair]}/cancel")
     end
+
+    def list params={}
+      params = get_defaults(params)
+      request(:post, "/order/#{params[:currency_pair]}/list")
+    end
   end
 end

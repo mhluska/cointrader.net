@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: get
-    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/stats/orders/BTCUSD/all/20
+    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/stats/orders/BTCUSD
     body:
       encoding: UTF-8
-      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432346099531"}'
+      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432738078061"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -16,7 +16,7 @@ http_interactions:
       X-Auth:
       - hCkVvzR4Nuc6dbuN0biMFSqMqSfc1f1grhXqoaQAlq1y
       X-Auth-Hash:
-      - 32ec9ab1b9f738ad8da233df5654d0cc21f85372cbda5bda3eea10fa37178c55
+      - 500932cd5b776b6eb6161080992cdc7a7be0e1b0066c9fa19b0633475b62097b
       Content-Length:
       - '77'
       User-Agent:
@@ -33,7 +33,7 @@ http_interactions:
       X-Apiary-Ratelimit-Limit:
       - '120'
       X-Apiary-Ratelimit-Remaining:
-      - '116'
+      - '119'
       Content-Type:
       - text/html; charset=utf-8
       Content-Length:
@@ -41,7 +41,7 @@ http_interactions:
       Etag:
       - W/"zVuw45vE0DsxkZqn5802FQ=="
       Date:
-      - Sat, 23 May 2015 01:52:02 GMT
+      - Wed, 27 May 2015 14:44:54 GMT
       Via:
       - 1.1 vegur
     body:
@@ -108,5 +108,5 @@ http_interactions:
         ICA8L3NlY3Rpb24+CiAgICAgIDwvb2w+CiAgPC9kaXY+CjwvYm9keT4KPC9o
         dG1sPgo=
     http_version: 
-  recorded_at: Sat, 23 May 2015 01:55:00 GMT
+  recorded_at: Wed, 27 May 2015 14:47:58 GMT
 recorded_with: VCR 2.9.3

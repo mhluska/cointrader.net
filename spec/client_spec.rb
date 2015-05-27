@@ -120,5 +120,16 @@ describe Cointrader::Client do
         end
       end
     end
+
+    describe '#list' do
+      it 'lists open limit orders' do
+        VCR.use_cassette('list') do
+          response = subject.list
+
+          expect_success(response)
+          expect(response['data'][0]['type'])
+        end
+      end
+    end
   end
 end
