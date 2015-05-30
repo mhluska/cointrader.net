@@ -131,5 +131,16 @@ describe Cointrader::Client do
         end
       end
     end
+
+    describe '#trades' do
+      it 'lists recent trades executed' do
+        VCR.use_cassette('trades') do
+          response = subject.trades
+
+          expect_success(response)
+          expect(response['data'][0]['price'])
+        end
+      end
+    end
   end
 end

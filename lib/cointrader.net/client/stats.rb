@@ -23,5 +23,11 @@ module Cointrader
       path   = join_params(params, :currency_pair, :book, :limit)
       request(:get, "/stats/orders/#{path}")
     end
+
+    def trades params={}
+      params = get_defaults(params)
+      path   = join_params(params, :currency_pair, :limit, :offset)
+      request(:get, "/stats/trades/#{path}")
+    end
   end
 end

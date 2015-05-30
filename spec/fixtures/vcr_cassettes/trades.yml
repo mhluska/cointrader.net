@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.cointrader.net/api4/stats/trades/BTCUSD
+    body:
+      encoding: UTF-8
+      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1433018591527"}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      X-Auth:
+      - hCkVvzR4Nuc6dbuN0biMFSqMqSfc1f1grhXqoaQAlq1y
+      X-Auth-Hash:
+      - 4feb0dd6e75359c6d34944382b2fb29ca4e4922b56e047adff86f10fd8f27287
+      Content-Length:
+      - '77'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 30 May 2015 20:40:02 GMT
+      Server:
+      - Apache/2.4.12 (Ubuntu) OpenSSL/1.0.1
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - ''
+      Set-Cookie:
+      - CTXIDSCK=ldjcc9t7dtcsdpqsu9vmagcgt3; path=/; secure; HttpOnly
+      - "___utmvaoVuoloc=XCm\x01sriU; path=/; Max-Age=900"
+      - '___utmvboVuoloc=mZY XeXOFalE: AtB; path=/; Max-Age=900'
+      - ___utmvmoVuoloc=TeazqYKNBXH; path=/; Max-Age=900
+      - incap_ses_240_116144=BkywaFl6qmf6akKvHqdUAyIgalUAAAAAracgZQAMuThopbZAvK8nHA==;
+        path=/; Domain=.cointrader.net
+      - visid_incap_116144=cvQ1M0k/R+ucp8Zn8S0BfyIgalUAAAAAQUIPAAAAAADP7AFNnjMEUDXy6TFC2pEd;
+        expires=Mon, 29 May 2017 07:57:03 GMT; path=/; Domain=.cointrader.net
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/html
+      X-Iinfo:
+      - 8-177494102-177494174 NNNY CT(232 230 0) RT(1433018401527 140) q(0 0 5 -1)
+        r(8 8) U13
+      X-Cdn:
+      - Incapsula
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAA/63SvU7DMBAA4J2niDy31p3/zyNlZGuZEEJRapVIkJbEEVRV
+        3x03olIQTVsRvNk++7PvbseatihC0zAf6zZMWFzH/HW2bqvIPENgE/aWdvNV
+        SNP5y/qjrFbZfd7EDCFb1PkyNClkmcec+ccdK9q6DlWxfd7kZZ1O3C5mD/O7
+        FLGpy+JwhZCKw+HW9zavYhm3aQ04SNJOKMG+/bRIXJg0DZ+haGNYHo4C6ino
+        qYQM0SN5DWw/uco0nOiX6aAbPRMdp0so6mtRewIlSxok6B4qpOSIwyp4YXwK
+        GKFqAYoM9VUUkjt7TgXw0v5dRQ4KwTpF/b8qy+1FVV2ruhOthMpKUl0Zj6rU
+        qdiDKFDXS3IMCppASoP9BKc+18Oo8yqhYgyqHaEmY36gwIUYVrWX5OHqqv5P
+        ftEL7cUoVJAyRnb9ekRteoo8h4LwQGz/tL/5AjIbgqbkBAAA
+    http_version: 
+  recorded_at: Sat, 30 May 2015 20:43:12 GMT
+recorded_with: VCR 2.9.3
