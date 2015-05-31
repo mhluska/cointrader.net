@@ -5,7 +5,7 @@ http_interactions:
     uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/account/tradehistory/BTCUSD
     body:
       encoding: UTF-8
-      string: '{"secret":"l33lpBPqrNazDz5bgOpQkaerFtpOBqw8wjLTK3sbEcSK","t":"1432563675464"}'
+      string: '{"secret":"5zyeBRp8XnXzPEeMkPZJ4tm4Pjqejw6ovnRuazBit1Eo","t":"1433057422699"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -14,9 +14,9 @@ http_interactions:
       Content-Type:
       - application/json
       X-Auth:
-      - hCkVvzR4Nuc6dbuN0biMFSqMqSfc1f1grhXqoaQAlq1y
+      - oo2GEmR7GX7gw3weoz57kKsR21k8VgJFEfEaoUYOCIRf
       X-Auth-Hash:
-      - 86286679b86562563b5462455364c7b9a43f72c039e6de810e24ce45114b57a9
+      - 547b1f705ccab06242b45b72582553f639e34c1995efbf3ccc48c1e373f925b4
       Content-Length:
       - '77'
       User-Agent:
@@ -33,7 +33,7 @@ http_interactions:
       X-Apiary-Ratelimit-Limit:
       - '120'
       X-Apiary-Ratelimit-Remaining:
-      - '119'
+      - '114'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -41,9 +41,9 @@ http_interactions:
       Access-Control-Max-Age:
       - '10'
       X-Apiary-Transaction-Id:
-      - 55632f26aeabd60300f6d68f
+      - 556ab7d17ca52603008d8362
       Date:
-      - Mon, 25 May 2015 14:18:14 GMT
+      - Sun, 31 May 2015 07:27:13 GMT
       Transfer-Encoding:
       - chunked
       Via:
@@ -69,5 +69,5 @@ http_interactions:
                 }]
             }
     http_version: 
-  recorded_at: Mon, 25 May 2015 14:21:15 GMT
+  recorded_at: Sun, 31 May 2015 07:30:23 GMT
 recorded_with: VCR 2.9.3

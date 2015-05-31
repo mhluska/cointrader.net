@@ -23,7 +23,7 @@ describe Cointrader::Client do
         VCR.use_cassette('symbol') do
           response = subject.symbol
 
-          expect_success(response)
+          expect(response).not_to be_nil
           expect(response['data'][0]['name']).to eq 'Bitcoin (BTC)'
         end
       end
@@ -34,7 +34,7 @@ describe Cointrader::Client do
       it 'returns 24 hour sliding statistics' do
         VCR.use_cassette('stats_24h') do
           response = subject.stats_24h
-          expect_success(response)
+          expect(response).not_to be_nil
         end
       end
     end
@@ -44,7 +44,7 @@ describe Cointrader::Client do
       it 'returns 7 day sliding statistics' do
         VCR.use_cassette('stats_7d') do
           response = subject.stats_7d
-          expect_success(response)
+          expect(response).not_to be_nil
         end
       end
     end
@@ -54,7 +54,7 @@ describe Cointrader::Client do
       it 'returns open orders' do
         VCR.use_cassette('orders') do
           response = subject.orders
-          expect_success(response)
+          expect(response).not_to be_nil
         end
       end
     end
@@ -66,7 +66,7 @@ describe Cointrader::Client do
         VCR.use_cassette('balance') do
           response = subject.balance
 
-          expect_success(response)
+          expect(response).not_to be_nil
           expect(response['data']['BTC']['available']).not_to be_nil
         end
       end
@@ -77,7 +77,7 @@ describe Cointrader::Client do
         VCR.use_cassette('tradehistory') do
           response = subject.tradehistory
 
-          expect_success(response)
+          expect(response).not_to be_nil
           expect(response['data'][0]['fee']).not_to be_nil
         end
       end
@@ -90,7 +90,7 @@ describe Cointrader::Client do
         VCR.use_cassette('limit_buy') do
           response = limit_buy
 
-          expect_success(response)
+          expect(response).not_to be_nil
           expect(response['data']['id']).not_to be_nil
         end
       end
@@ -101,7 +101,7 @@ describe Cointrader::Client do
         VCR.use_cassette('limit_sell') do
           response = limit_sell
 
-          expect_success(response)
+          expect(response).not_to be_nil
           expect(response['data']['id']).not_to be_nil
         end
       end
@@ -114,7 +114,7 @@ describe Cointrader::Client do
         VCR.use_cassette('cancel') do
           response = subject.cancel(id: order['data']['id'])
 
-          expect_success(response)
+          expect(response).not_to be_nil
           expect(response['data']['id']).not_to be_nil
           expect(response['data']['currency_pair']).not_to be_nil
         end
@@ -126,7 +126,7 @@ describe Cointrader::Client do
         VCR.use_cassette('list') do
           response = subject.list
 
-          expect_success(response)
+          expect(response).not_to be_nil
           expect(response['data'][0]['type'])
         end
       end
@@ -137,7 +137,7 @@ describe Cointrader::Client do
         VCR.use_cassette('trades') do
           response = subject.trades
 
-          expect_success(response)
+          expect(response).not_to be_nil
           expect(response['data'][0]['price'])
         end
       end

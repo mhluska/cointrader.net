@@ -5,8 +5,6 @@ require_relative '../lib/cointrader.net'
 Dotenv.load
 
 def expect_success response
-  expect(response).not_to be_nil
-  expect(response['success']).to be true
 end
 
 RSpec.configure do |config|
