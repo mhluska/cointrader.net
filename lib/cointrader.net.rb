@@ -8,7 +8,7 @@ module Cointrader
     def initialize
       self.api_key    = nil
       self.api_secret = nil
-      self.api_url    = nil
+      self.api_url    = 'https://www.cointrader.net/api4'
     end
   end
 
