@@ -3,7 +3,6 @@ require 'json'
 require 'openssl'
 require 'date'
 require 'uri'
-require 'digest'
 
 module Cointrader
   module Request
@@ -46,10 +45,8 @@ module Cointrader
           t: nonce,
         })
 
-        secret    = Digest::MD5.hexdigest(api_secret)
-        data      = payload.to_json + api_secret
         digest    = OpenSSL::Digest.new('sha256')
-        signature = OpenSSL::HMAC.hexdigest(digest, secret, data)
+        signature = OpenSSL::HMAC.hexdigest(digest, api_secret, payload.to_json)
 
         headers.merge!({
           'X-Auth' => api_key,
