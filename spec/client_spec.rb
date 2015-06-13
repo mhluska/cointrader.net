@@ -9,12 +9,28 @@ describe Cointrader::Client do
     subject.limit_sell(total_quantity: 1, price: 10)
   end
 
+  def market_buy
+    subject.market_buy(total_amount: 1)
+  end
+
+  def market_sell
+    subject.market_sell(total_amount: 1)
+  end
+
   def safe_limit_buy
     VCR.use_cassette('limit_buy', &method(:limit_buy))
   end
 
   def safe_limit_sell
     VCR.use_cassette('limit_sell', &method(:limit_sell))
+  end
+
+  def safe_market_buy
+    VCR.use_cassette('market_buy', &method(:market_buy))
+  end
+
+  def safe_market_sell
+    VCR.use_cassette('market_sell', &method(:market_sell))
   end
 
   describe 'stats' do
@@ -128,6 +144,28 @@ describe Cointrader::Client do
 
           expect(response).not_to be_nil
           expect(response['data'][0]['type'])
+        end
+      end
+    end
+
+    describe '#market_buy' do
+      it 'returns an order' do
+        VCR.use_cassette('market_buy') do
+          response = market_buy
+
+          expect(response).not_to be_nil
+          expect(response['message']).not_to eq('Unauthorized')
+        end
+      end
+    end
+
+    describe '#market_sell' do
+      it 'returns an order' do
+        VCR.use_cassette('market_sell') do
+          response = market_sell
+
+          expect(response).not_to be_nil
+          expect(response['message']).not_to eq('Unauthorized')
         end
       end
     end

@@ -19,5 +19,15 @@ module Cointrader
       params = get_defaults(params)
       request(:post, "/order/#{params[:currency_pair]}/list")
     end
+
+    def market_buy params={}
+      params = get_defaults(params)
+      request(:post, "/order/#{params[:currency_pair]}/marketbuy", total_amount: params[:total_amount])
+    end
+
+    def market_sell params={}
+      params = get_defaults(params)
+      request(:post, "/order/#{params[:currency_pair]}/marketsell", total_amount: params[:total_amount])
+    end
   end
 end

@@ -14,11 +14,28 @@ module Cointrader
       names.map { |name| params[name] }.compact.join('/')
     end
 
+    def convert_values params
+      pairs = params.map do |k, v|
+        new_value =
+          if k.match(/price|total_amount/)
+            "%04.2f" % v
+          elsif k.match(/amount|quantity/)
+            "%04.8f" % v
+          else
+            v
+          end
+
+        [k, new_value]
+      end
+
+      Hash[pairs]
+    end
+
     def get_defaults params
       defaults = {
         currency_pair: Client::DEFAULT_CURRENCY_PAIR
       }
-      defaults.merge(params)
+      defaults.merge(convert_values(params))
     end
 
     def request(method, path, body={})
