@@ -2,10 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/stats/orders/BTCUSD
+    uri: https://sandbox.cointrader.net/api4/stats/orders/BTCUSD
     body:
       encoding: UTF-8
-      string: '{"secret":"5zyeBRp8XnXzPEeMkPZJ4tm4Pjqejw6ovnRuazBit1Eo","t":"1433057421155"}'
+      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-06-13
+        23:00:20 UTC"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -14,99 +15,54 @@ http_interactions:
       Content-Type:
       - application/json
       X-Auth:
-      - oo2GEmR7GX7gw3weoz57kKsR21k8VgJFEfEaoUYOCIRf
+      - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
       X-Auth-Hash:
-      - 0739355e236ae0ecc45c6ef053f3fd78946053cc347037e8b02957f9d75e9259
+      - 23eabdd5f257503e2551fb9cae5e8ddeadf114a7e6145ecd937da1c4d4d6b660
       Content-Length:
-      - '77'
+      - '87'
       User-Agent:
       - Ruby
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Apiary-Ratelimit-Limit:
-      - '120'
-      X-Apiary-Ratelimit-Remaining:
-      - '116'
-      Content-Type:
-      - text/html; charset=utf-8
-      Content-Length:
-      - '2660'
-      Etag:
-      - W/"zVuw45vE0DsxkZqn5802FQ=="
       Date:
-      - Sun, 31 May 2015 07:27:11 GMT
-      Via:
-      - 1.1 vegur
+      - Sat, 13 Jun 2015 23:00:21 GMT
+      Server:
+      - Apache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - ''
+      Set-Cookie:
+      - CTXIDSCK=f3efaocpuu13s3pmqfhjegnap1; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '215'
+      Content-Type:
+      - text/html
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPG1ldGEgY2hhcnNl
-        dD0idXRmLTgiPgo8dGl0bGU+YXBpYXJ5Lmlv4oCUNDA04oCUTm8gUmVzb3Vy
-        Y2UgRm91bmQhPC90aXRsZT4KPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVm
-        PSJodHRwczovL2FwaWFyeS5hLnNzbC5mYXN0bHkubmV0L2Fzc2V0cy9jc3Mv
-        bm9ybWFsaXplLWMxYTYwMTUwNDBlZjEyMDEuY3NzIj4KPGxpbmsgcmVsPSJz
-        dHlsZXNoZWV0IiBocmVmPSJodHRwczovL2FwaWFyeS5hLnNzbC5mYXN0bHku
-        bmV0L2Fzc2V0cy9jc3MvZXJyb3ItNTEzOWJmNDAxYzk3OTJhYy5jc3MiPgo8
-        Ym9keT4KPGRpdiBpZD0iYmciPjwvZGl2PgogPGRpdiBpZD0ibWVzc2FnZSI+
-        CiAgPGgxPlRoZSByZXNvdXJjZSB5b3UncmUgbG9va2luZyBmb3IgZG9lc24n
-        dCBleGlzdC4gPGJyPlBsZWFzZSBjaGVjayB0aGUgPGEgaHJlZj0iaHR0cDov
-        L2RvY3MuY29pbnRyYWRlci5hcGlhcnkuaW8vIj5BUEkgZG9jdW1lbnRhdGlv
-        bjwvYT4gb3IgaGF2ZSBhIGxvb2sgb24gYXZhaWxhYmxlIHJlc291cmNlcyBi
-        ZWxvdy48L2gxPgogIDxwPjwvcD4KICA8b2w+CiAgICAgICAgICA8c2VjdGlv
-        bj48aDI+Q3VycmVuY2llczwvaDI+CiAgICAgICAgICAgICAgPC9zZWN0aW9u
-        PgogICAgICAgICAgPHNlY3Rpb24+PGgyPlB1YmxpYyBNZXRob2RzIC0gR0VU
-        PC9oMj4KICAgICAgICAgICAgICAgICAgPGxpPjxiPkdFVDwvYj4gL2FwaTQv
-        c3RhdHMvc3ltYm9sPC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPkdF
-        VDwvYj4gL2FwaTQvc3RhdHMvZGFpbHkve2N1cnJlbmN5X3BhaXJ9PC9saT4K
-        ICAgICAgICAgICAgICAgICAgPGxpPjxiPkdFVDwvYj4gL2FwaTQvc3RhdHMv
-        d2Vla2x5L3tjdXJyZW5jeV9wYWlyfTwvbGk+CiAgICAgICAgICAgICAgICAg
-        IDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL29yZGVycy97Y3VycmVuY3lf
-        cGFpcn0ve2J1eXxzZWxsfGFsbH0ve2xpbWl0fTwvbGk+CiAgICAgICAgICAg
-        ICAgICAgIDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL2hpZ2gve2N1cnJl
-        bmN5X3BhaXJ9PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPkdFVDwv
-        Yj4gL2FwaTQvc3RhdHMvbG93L3tjdXJyZW5jeV9wYWlyfTwvbGk+CiAgICAg
-        ICAgICAgICAgICAgIDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL2J1eXBy
-        aWNlL3tjdXJyZW5jeV9wYWlyfS97YW1vdW50fTwvbGk+CiAgICAgICAgICAg
-        ICAgICAgIDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL3NlbGxwcmljZS97
-        Y3VycmVuY3lfcGFpcn0ve3F1YW50aXR5fTwvbGk+CiAgICAgICAgICAgICAg
-        ICAgIDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL3RyYWRlcy97Y3VycmVu
-        Y3lfcGFpcn0ve2xpbWl0fS97b2Zmc2V0fTwvbGk+CiAgICAgICAgICAgICAg
-        ICAgIDxsaT48Yj5HRVQ8L2I+IC9hcGk0L3N0YXRzL21hcmtldC97Y3VycmVu
-        Y3lfcGFpcn0ve2xpbWl0fS97b2Zmc2V0fTwvbGk+CiAgICAgICAgICAgICAg
-        PC9zZWN0aW9uPgogICAgICAgICAgPHNlY3Rpb24+PGgyPkF1dGhlbnRpY2F0
-        ZWQgTWV0aG9kcyAtIFBPU1Q8L2gyPgogICAgICAgICAgICAgICAgICA8bGk+
-        PGI+UE9TVDwvYj4gL2FwaTQvYWNjb3VudC9iYWxhbmNlPC9saT4KICAgICAg
-        ICAgICAgICAgICAgPGxpPjxiPlBPU1Q8L2I+IC9hcGk0L2FjY291bnQvZmVl
-        czwvbGk+CiAgICAgICAgICAgICAgICAgIDxsaT48Yj5QT1NUPC9iPiAvYXBp
-        NC9hY2NvdW50L2xpc3RiYW5rPC9saT4KICAgICAgICAgICAgICAgICAgPGxp
-        PjxiPlBPU1Q8L2I+IC9hcGk0L2FjY291bnQvYnRjYWRkcmVzczwvbGk+CiAg
-        ICAgICAgICAgICAgICAgIDxsaT48Yj5QT1NUPC9iPiAvYXBpNC9hY2NvdW50
-        L3dpdGhkcmF3PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPlBPU1Q8
-        L2I+IC9hcGk0L2FjY291bnQvaGlzdG9yeTwvbGk+CiAgICAgICAgICAgICAg
-        ICAgIDxsaT48Yj5QT1NUPC9iPiAvYXBpNC9vcmRlci97Y3VycmVuY3lfcGFp
-        cn0vYnV5PC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxiPlBPU1Q8L2I+
-        IC9hcGk0L29yZGVyL3tjdXJyZW5jeV9wYWlyfS9zZWxsPC9saT4KICAgICAg
-        ICAgICAgICAgICAgPGxpPjxiPlBPU1Q8L2I+IC9hcGk0L29yZGVyL3tjdXJy
-        ZW5jeV9wYWlyfS9zdGF0dXM8L2xpPgogICAgICAgICAgICAgICAgICA8bGk+
-        PGI+UE9TVDwvYj4gL2FwaTQvb3JkZXIve2N1cnJlbmN5X3BhaXJ9L2xpc3Q8
-        L2xpPgogICAgICAgICAgICAgICAgICA8bGk+PGI+UE9TVDwvYj4gL2FwaTQv
-        b3JkZXIve2N1cnJlbmN5X3BhaXJ9L2NhbmNlbDwvbGk+CiAgICAgICAgICAg
-        ICAgICAgIDxsaT48Yj5QT1NUPC9iPiAvYXBpNC9vcmRlci97Y3VycmVuY3lf
-        cGFpcn0vY2FuY2VsYWxsPC9saT4KICAgICAgICAgICAgICAgICAgPGxpPjxi
-        PlBPU1Q8L2I+IC9hcGk0L29yZGVyL3tjdXJyZW5jeV9wYWlyfS9tYXJrZXRi
-        dXk8L2xpPgogICAgICAgICAgICAgICAgICA8bGk+PGI+UE9TVDwvYj4gL2Fw
-        aTQvb3JkZXIve2N1cnJlbmN5X3BhaXJ9L21hcmtldHNlbGw8L2xpPgogICAg
-        ICAgICAgICAgICAgICA8bGk+PGI+UE9TVDwvYj4gL2FwaTQvYWNjb3VudC90
-        cmFkZWhpc3Rvcnkve2N1cnJlbmN5X3BhaXJ9PC9saT4KICAgICAgICAgICAg
-        ICA8L3NlY3Rpb24+CiAgICAgIDwvb2w+CiAgPC9kaXY+CjwvYm9keT4KPC9o
-        dG1sPgo=
+        H4sIAAAAAAAAA42OsQrCMBCGd5+i3FxLkjaGZlR3B3USkZAeUqi1ppehSN/d
+        K4roIt72f//d8d2hj95j34OlEDEFupJrVtfYElhQkMKFS3dGTsvdar9dJ5sO
+        22QTKgw915UjB/ZwBx9DwNYPp87V4b3NG12o/XSucpkJwYCGbspbbBpOt+ha
+        qmlgUpQm0+I58FJhLGVRKsUNMx/QEVbTOyH1XCzmUiUqt9rYwsCY/uUhvjyW
+        cfjWUHKR5aI0WmvzocF2Wmaq+G2RaxiP4+wBB9ffo1gBAAA=
     http_version: 
-  recorded_at: Sun, 31 May 2015 07:30:22 GMT
+  recorded_at: Sat, 13 Jun 2015 23:00:21 GMT
 recorded_with: VCR 2.9.3

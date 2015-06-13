@@ -5,6 +5,8 @@ require_relative '../lib/cointrader.net'
 Dotenv.load
 
 def expect_success response
+  expect(response).not_to be_nil
+  expect(response['message']).not_to eq('Unauthorized')
 end
 
 RSpec.configure do |config|

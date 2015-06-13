@@ -2,11 +2,11 @@
 http_interactions:
 - request:
     method: post
-    uri: https://sandbox.cointrader.net/api4/order/BTCUSD/marketsell
+    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/order/BTCUSD/marketsell
     body:
       encoding: UTF-8
-      string: '{"total_amount":"1.00","secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-06-13
-        22:50:57 UTC"}'
+      string: '{"total_amount":"1.00","secret":"5zyeBRp8XnXzPEeMkPZJ4tm4Pjqejw6ovnRuazBit1Eo","t":"2015-06-13
+        22:58:45 UTC"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -15,9 +15,9 @@ http_interactions:
       Content-Type:
       - application/json
       X-Auth:
-      - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
+      - oo2GEmR7GX7gw3weoz57kKsR21k8VgJFEfEaoUYOCIRf
       X-Auth-Hash:
-      - 49ae1e23b538f3b9fba2845baecfcb1ef8cc9695e8c449fa58832add11d6f128
+      - 2c72ecb3899789fd228447ae223e87a5ef543765d0e75e2363cd77745c29397b
       Content-Length:
       - '109'
       User-Agent:
@@ -27,40 +27,46 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Sat, 13 Jun 2015 22:51:00 GMT
       Server:
-      - Apache
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Powered-By:
-      - ''
-      Set-Cookie:
-      - CTXIDSCK=lbcm186um3t9ef0gped6s8n450; path=/; HttpOnly
-      Expires:
-      - Thu, 19 Nov 1981 08:52:00 GMT
-      Cache-Control:
-      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-      Pragma:
-      - no-cache
-      Vary:
-      - Accept-Encoding
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '132'
-      Content-Type:
-      - application/json
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Apiary-Ratelimit-Limit:
+      - '120'
+      X-Apiary-Ratelimit-Remaining:
+      - '108'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
+      Access-Control-Max-Age:
+      - '10'
+      X-Apiary-Transaction-Id:
+      - 557cb5a676b3fe03003a2430
+      Date:
+      - Sat, 13 Jun 2015 22:58:46 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA02MsQrCMBRFd7/iceciXQTJppWCQ6e2H/BMXiQYU8hLXEr/
-        3bo5HjjnrNBqrajCeI4qDd478FNgMHB+SaHr1M3jjUaJkXoOURwaOC4Ms0Jy
-        XnK3uJ9/bk/47+9Jq/fBBkmF+pqcHuny2Q/8iGKoxbYdvnYTGFKAAAAA
+      encoding: UTF-8
+      string: |-
+        {
+            "success":true,
+            "message":"Market Sell BTCUSD Completed",
+            "data":
+            {
+                "type":"sale",
+                "request_sell":"0.50000000",
+                "amount":"295.00",
+                "fee":"0.00160000",
+                "avg_price":"590.00",
+                "receipt":"792112",
+                "timestamp":"2014-06-14 00:31:39",
+                "currency_pair":"BTCUSD"
+            }
+        }
     http_version: 
-  recorded_at: Sat, 13 Jun 2015 22:51:00 GMT
+  recorded_at: Sat, 13 Jun 2015 22:58:46 GMT
 recorded_with: VCR 2.9.3

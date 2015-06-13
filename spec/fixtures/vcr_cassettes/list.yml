@@ -2,10 +2,11 @@
 http_interactions:
 - request:
     method: post
-    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/order/BTCUSD/list
+    uri: https://sandbox.cointrader.net/api4/order/BTCUSD/list
     body:
       encoding: UTF-8
-      string: '{"secret":"5zyeBRp8XnXzPEeMkPZJ4tm4Pjqejw6ovnRuazBit1Eo","t":"1433057426129"}'
+      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-06-13
+        23:00:29 UTC"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -14,11 +15,11 @@ http_interactions:
       Content-Type:
       - application/json
       X-Auth:
-      - oo2GEmR7GX7gw3weoz57kKsR21k8VgJFEfEaoUYOCIRf
+      - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
       X-Auth-Hash:
-      - d2544302f633bcdc69acaadc9a1ff2b38ec2aafde490114d52cf2c65a11e856c
+      - fc7daf53df8f303b768993ad42439156bf7062265a68584fb490c286113a8729
       Content-Length:
-      - '77'
+      - '87'
       User-Agent:
       - Ruby
   response:
@@ -26,60 +27,40 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Apiary-Ratelimit-Limit:
-      - '120'
-      X-Apiary-Ratelimit-Remaining:
-      - '110'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
-      Access-Control-Max-Age:
-      - '10'
-      X-Apiary-Transaction-Id:
-      - 556ab7d51197a90300fefd08
       Date:
-      - Sun, 31 May 2015 07:27:17 GMT
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
+      - Sat, 13 Jun 2015 23:00:31 GMT
+      Server:
+      - Apache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - ''
+      Set-Cookie:
+      - CTXIDSCK=79esnfnslvon55kkg0rmprnru6; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '114'
+      Content-Type:
+      - application/json
     body:
-      encoding: UTF-8
-      string: |-
-        {
-            "success":true,
-            "totalCount":3,
-            "message":"3 Open Orders Found",
-            "data":
-            [
-            {
-                "id":"917",
-                "type":"Buy",
-                "price":"590.00",
-                "quantity":"0.00900000",
-                "total":"5.31",
-                "created":"2014-03-22 02:24:57"
-            },{
-                "id":"916",
-                "type":"Buy",
-                "price":"590.00",
-                "quantity":"0.00900000",
-                "total":"5.31",
-                "created":"2014-03-22 02:24:55"
-            },{
-                "id":"915",
-                "type":"Buy",
-                "price":"590.00",
-                "quantity":"0.00900000",
-                "total":"5.31",
-                "created":"2014-03-22 02:24:53"
-            }]
-        }
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA13MMQ5AQBBG4d4pNn8tQidbIkoKHGBjhwYjM1Ti7mx0yld8
+        74Ke40iqsJNblGKsb7iZYNGwaXfaTNGXQ1eZVjyJmprPzSOGd4eDvUAiLCX7
+        IPI0w+/A4cAfnQJNcN/RA2AZKkJ3AAAA
     http_version: 
-  recorded_at: Sun, 31 May 2015 07:30:27 GMT
+  recorded_at: Sat, 13 Jun 2015 23:00:31 GMT
 recorded_with: VCR 2.9.3

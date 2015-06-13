@@ -2,10 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/stats/symbol
+    uri: https://sandbox.cointrader.net/api4/stats/symbol
     body:
       encoding: UTF-8
-      string: '{"secret":"5zyeBRp8XnXzPEeMkPZJ4tm4Pjqejw6ovnRuazBit1Eo","t":"1433057418585"}'
+      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-06-13
+        23:00:14 UTC"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -14,11 +15,11 @@ http_interactions:
       Content-Type:
       - application/json
       X-Auth:
-      - oo2GEmR7GX7gw3weoz57kKsR21k8VgJFEfEaoUYOCIRf
+      - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
       X-Auth-Hash:
-      - fccdb2547fe2851d7d8e747839b9ce8e900d5336e616845e6f83ca61d35cdb8e
+      - cc4bde521313a2bf70d0ed0a17c67d20c95b85fa4afa0c510886c175b7c889b6
       Content-Length:
-      - '77'
+      - '87'
       User-Agent:
       - Ruby
   response:
@@ -26,55 +27,42 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Apiary-Ratelimit-Limit:
-      - '120'
-      X-Apiary-Ratelimit-Remaining:
-      - '119'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
-      Access-Control-Max-Age:
-      - '10'
-      X-Apiary-Transaction-Id:
-      - 556ab7cd9798a803008172db
       Date:
-      - Sun, 31 May 2015 07:27:09 GMT
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
+      - Sat, 13 Jun 2015 23:00:16 GMT
+      Server:
+      - Apache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - ''
+      Set-Cookie:
+      - CTXIDSCK=36divpj83qd3mgf4pf5jakfhe1; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '200'
+      Content-Type:
+      - application/json
     body:
-      encoding: UTF-8
-      string: |-
-        {
-            "success":true,
-            "message":"Supported Symbols",
-            "data":
-            [
-            {
-                "name":"Bitcoin (BTC)",
-                "symbol":"XBT",
-                "description":"Basic Bitcoin-demoninated account",
-                "decimals":"8"
-            },
-            {
-                "name":"U.S. Dollar (USD)",
-                "symbol":"USD","description":"Basic USD-denominated account",
-                "decimals":"2"
-            },
-            {
-                "name":"Canadian Dollar (CAD)",
-                "symbol":"CAD",
-                "description":"Basic CAD-denominated account",
-                "decimals":"2"
-            }
-            ]
-        }
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA43NsQqDMBAG4L1PEW6yYB06Fbdq30CFQulwTUIJmIuYOBTx
+        3XuRInWwdLvj/3++EfwgpfYe8tAPOgXLNz415FANXef6oJWoXvbhWg8pKAwI
+        +W0EQhs7hQnSGRJJUZd7zv3c5OBa1LGuvexNF4yjWEZvpPhMDkpbR4YwAiil
+        GyjMC2ksspXDCaZ0gZqsysTFtS32ImmqywrjfwPjhCFy9hd0/IZKJFQGacHK
+        8xrjfwPj5C/sPu3ekt8n5ncBAAA=
     http_version: 
-  recorded_at: Sun, 31 May 2015 07:30:19 GMT
+  recorded_at: Sat, 13 Jun 2015 23:00:16 GMT
 recorded_with: VCR 2.9.3

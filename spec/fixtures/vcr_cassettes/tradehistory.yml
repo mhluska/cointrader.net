@@ -2,10 +2,11 @@
 http_interactions:
 - request:
     method: post
-    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/account/tradehistory/BTCUSD
+    uri: https://sandbox.cointrader.net/api4/account/tradehistory/BTCUSD
     body:
       encoding: UTF-8
-      string: '{"secret":"5zyeBRp8XnXzPEeMkPZJ4tm4Pjqejw6ovnRuazBit1Eo","t":"1433057422699"}'
+      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-06-13
+        23:00:26 UTC"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -14,11 +15,11 @@ http_interactions:
       Content-Type:
       - application/json
       X-Auth:
-      - oo2GEmR7GX7gw3weoz57kKsR21k8VgJFEfEaoUYOCIRf
+      - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
       X-Auth-Hash:
-      - 547b1f705ccab06242b45b72582553f639e34c1995efbf3ccc48c1e373f925b4
+      - df4718084a819b003d263c40e0ab07f5c3d0f323d2e8bbd4dd7f96111ea2219f
       Content-Length:
-      - '77'
+      - '87'
       User-Agent:
       - Ruby
   response:
@@ -26,48 +27,40 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Apiary-Ratelimit-Limit:
-      - '120'
-      X-Apiary-Ratelimit-Remaining:
-      - '114'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
-      Access-Control-Max-Age:
-      - '10'
-      X-Apiary-Transaction-Id:
-      - 556ab7d17ca52603008d8362
       Date:
-      - Sun, 31 May 2015 07:27:13 GMT
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
+      - Sat, 13 Jun 2015 23:00:27 GMT
+      Server:
+      - Apache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - ''
+      Set-Cookie:
+      - CTXIDSCK=gdillhuvabvuc9994n1t8an4q7; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '94'
+      Content-Type:
+      - application/json
     body:
-      encoding: UTF-8
-      string: |2-
-            {
-                "success":true,
-                "totalCount":"1",
-                "message":"Showing 1 Executed BTCUSD Trades",
-                "data":
-                [{
-                    "currency_pair":"BTCUSD",
-                    "type":"Buy",
-                    "trade_id":"8739",
-                    "order_id":"2194028",
-                    "quantity":"0.02549920",
-                    "price":"453.00",
-                    "total":"11.55",
-                    "fee":"0.06",
-                    "executed":"2014-05-06 02:56:52"
-                }]
-            }
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6tWKi5NTk4tLlaySkvMKU7VUSrJL0nMcc4vzStRsjLQUcoF
+        yiWmpypZKfnlKwQkFpcohBQlpqQWK7gBlaQo6SilJJYkKllFx9ZyAQBQ0dFf
+        TAAAAA==
     http_version: 
-  recorded_at: Sun, 31 May 2015 07:30:23 GMT
+  recorded_at: Sat, 13 Jun 2015 23:00:27 GMT
 recorded_with: VCR 2.9.3

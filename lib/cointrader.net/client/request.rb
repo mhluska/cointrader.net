@@ -56,10 +56,9 @@ module Cointrader
 
         raise 'API key and API secret are required!' unless api_key && api_secret
 
-        nonce   = DateTime.now.strftime('%Q')
         payload = body.merge({
           secret: api_secret,
-          t: nonce,
+          t: Time.now.utc.to_s
         })
 
         digest    = OpenSSL::Digest.new('sha256')

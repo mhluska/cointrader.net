@@ -2,10 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: https://private-anon-e01e290b7-cointrader.apiary-mock.com/api4/stats/weekly/BTCUSD
+    uri: https://sandbox.cointrader.net/api4/stats/weekly/BTCUSD
     body:
       encoding: UTF-8
-      string: '{"secret":"5zyeBRp8XnXzPEeMkPZJ4tm4Pjqejw6ovnRuazBit1Eo","t":"1433057420226"}'
+      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-06-13
+        23:00:18 UTC"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -14,11 +15,11 @@ http_interactions:
       Content-Type:
       - application/json
       X-Auth:
-      - oo2GEmR7GX7gw3weoz57kKsR21k8VgJFEfEaoUYOCIRf
+      - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
       X-Auth-Hash:
-      - a3d56588c3cd703d37cca711112af8c2aacac15350111425d73fc01077ee9af2
+      - 06a551981b6070bc1587fe57d647356827322f1389271140772680bcac7eec68
       Content-Length:
-      - '77'
+      - '87'
       User-Agent:
       - Ruby
   response:
@@ -26,48 +27,41 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Apiary-Ratelimit-Limit:
-      - '120'
-      X-Apiary-Ratelimit-Remaining:
-      - '117'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT
-      Access-Control-Max-Age:
-      - '10'
-      X-Apiary-Transaction-Id:
-      - 556ab7cf2e7cbc030044b279
       Date:
-      - Sun, 31 May 2015 07:27:11 GMT
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
+      - Sat, 13 Jun 2015 23:00:19 GMT
+      Server:
+      - Apache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - ''
+      Set-Cookie:
+      - CTXIDSCK=u0sg20i2kf4ptora6faq0d9um1; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '152'
+      Content-Type:
+      - application/json
     body:
-      encoding: UTF-8
-      string: |-
-        {
-            "success":true,
-            "message":"7 Day BTCUSD Stats",
-            "data":
-            {
-                "BTCUSD":
-                {
-                    "lastTradePrice":"640.56",
-                    "bid":"640.56",
-                    "offer":"643.52",
-                    "high":"690.00",
-                    "low":"550.00",
-                    "average":"629.55",
-                    "volume":"616.24892785"
-                }
-            }
-        }
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6tWKi5NTk4tLlayKikqTdVRygWyE9NTlayUzBVcEisVnEKc
+        Q4NdFIJLEkuKlXSUUhJLEpWsqpUgwiBWTmJxSUhRYkpqQFFmMkifgZ6BAVBl
+        UmYKkGNkDOKCAFAoPy0ttQgsaIgQzMhMz0DoyskvR3ASy1KLIG6BCpTl55Tm
+        wvhQE2pra7kAhoO1qsYAAAA=
     http_version: 
-  recorded_at: Sun, 31 May 2015 07:30:21 GMT
+  recorded_at: Sat, 13 Jun 2015 23:00:20 GMT
 recorded_with: VCR 2.9.3
