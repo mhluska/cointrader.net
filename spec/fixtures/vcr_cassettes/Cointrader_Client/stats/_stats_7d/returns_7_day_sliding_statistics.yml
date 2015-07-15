@@ -1,12 +1,12 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://sandbox.cointrader.net/api4/account/tradehistory/BTCUSD
+    method: get
+    uri: https://sandbox.cointrader.net/api4/stats/weekly/BTCUSD
     body:
       encoding: UTF-8
-      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-06-13
-        23:00:26 UTC"}'
+      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-07-06
+        00:33:04 UTC"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -17,7 +17,7 @@ http_interactions:
       X-Auth:
       - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
       X-Auth-Hash:
-      - df4718084a819b003d263c40e0ab07f5c3d0f323d2e8bbd4dd7f96111ea2219f
+      - 9fc62603fa36811d46f8e05120ca4a31f76d252687f210aa1ca5cf938e07ca0b
       Content-Length:
       - '87'
       User-Agent:
@@ -28,7 +28,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 13 Jun 2015 23:00:27 GMT
+      - Mon, 06 Jul 2015 00:33:06 GMT
       Server:
       - Apache
       X-Frame-Options:
@@ -40,7 +40,7 @@ http_interactions:
       X-Powered-By:
       - ''
       Set-Cookie:
-      - CTXIDSCK=gdillhuvabvuc9994n1t8an4q7; path=/; HttpOnly
+      - CTXIDSCK=eqae2lrob7p42655utn0ke26k1; path=/; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -52,15 +52,16 @@ http_interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '94'
+      - '155'
       Content-Type:
       - application/json
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA6tWKi5NTk4tLlaySkvMKU7VUSrJL0nMcc4vzStRsjLQUcoF
-        yiWmpypZKfnlKwQkFpcohBQlpqQWK7gBlaQo6SilJJYkKllFx9ZyAQBQ0dFf
-        TAAAAA==
+        H4sIAAAAAAAAA6tWKi5NTk4tLlayKikqTdVRygWyE9NTlayUzBVcEisVnEKc
+        Q4NdFIJLEkuKlXSUUhJLEpWsqpUgwiBWTmJxSUhRYkpqQFFmMkifkbGhnoEB
+        UG1SZgqYawDkggBQKD8tLbUIrgYqmJGZngEUM4DoyskvR3ASy1KLIK6BCpTl
+        55TmwvhQE2pra7kAadIoTMgAAAA=
     http_version: 
-  recorded_at: Sat, 13 Jun 2015 23:00:27 GMT
+  recorded_at: Mon, 06 Jul 2015 00:33:06 GMT
 recorded_with: VCR 2.9.3

@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.cointrader.net/api4/stats/orders/BTCUSD
+    body:
+      encoding: UTF-8
+      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-07-06
+        00:33:06 UTC"}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      X-Auth:
+      - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
+      X-Auth-Hash:
+      - 0c50020b0a188cf4eb076f4bec8cf3789915ee198360a0f1a1c7531e59e8d463
+      Content-Length:
+      - '87'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 06 Jul 2015 00:33:08 GMT
+      Server:
+      - Apache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - ''
+      Set-Cookie:
+      - CTXIDSCK=lnb09vfth35m8jmcbliib0t547; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '221'
+      Content-Type:
+      - text/html
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA42Ou2rDQBBF+3yFmFpe9qm1t7TTu3BSmRCW1WAEsqysZgth
+        9O8ZQTBxE1Lec+8M5w5TSQmnCQLlgjXQjWJ/uJWBIICGGq5cxgty2r8d3k+v
+        1XHEoTrmFvPEdRspQjjfIZWccUjz5xi7/FjzYsxdWs+1UUJKBjSPaz5h33P6
+        KnGgjmYmdueF3trGaGngR4WxUnbrtfCOWcoYCdv1nVRuI5uN0pU2wflgPSz1
+        vzzkk8e+zM8aWjXCyJ13zvlfGmznlND2bwvjYPlYXr4B1xuZ0FgBAAA=
+    http_version: 
+  recorded_at: Mon, 06 Jul 2015 00:33:09 GMT
+recorded_with: VCR 2.9.3

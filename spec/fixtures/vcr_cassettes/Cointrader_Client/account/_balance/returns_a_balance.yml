@@ -1,12 +1,12 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: https://sandbox.cointrader.net/api4/stats/orders/BTCUSD
+    method: post
+    uri: https://sandbox.cointrader.net/api4/account/balance
     body:
       encoding: UTF-8
-      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-06-13
-        23:00:20 UTC"}'
+      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-07-06
+        00:33:09 UTC"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -17,7 +17,7 @@ http_interactions:
       X-Auth:
       - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
       X-Auth-Hash:
-      - 23eabdd5f257503e2551fb9cae5e8ddeadf114a7e6145ecd937da1c4d4d6b660
+      - e6bb80adc0eaaa0c1b6de259208d310034606062bc0c6e9d27a892364d08c6e8
       Content-Length:
       - '87'
       User-Agent:
@@ -28,7 +28,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 13 Jun 2015 23:00:21 GMT
+      - Mon, 06 Jul 2015 00:33:10 GMT
       Server:
       - Apache
       X-Frame-Options:
@@ -40,7 +40,7 @@ http_interactions:
       X-Powered-By:
       - ''
       Set-Cookie:
-      - CTXIDSCK=f3efaocpuu13s3pmqfhjegnap1; path=/; HttpOnly
+      - CTXIDSCK=4f9kvstmt2ff4r5i4i42ssv4q0; path=/; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -52,17 +52,15 @@ http_interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '215'
+      - '131'
       Content-Type:
-      - text/html
+      - application/json
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA42OsQrCMBCGd5+i3FxLkjaGZlR3B3USkZAeUqi1ppehSN/d
-        K4roIt72f//d8d2hj95j34OlEDEFupJrVtfYElhQkMKFS3dGTsvdar9dJ5sO
-        22QTKgw915UjB/ZwBx9DwNYPp87V4b3NG12o/XSucpkJwYCGbspbbBpOt+ha
-        qmlgUpQm0+I58FJhLGVRKsUNMx/QEVbTOyH1XCzmUiUqt9rYwsCY/uUhvjyW
-        cfjWUHKR5aI0WmvzocF2Wmaq+G2RaxiP4+wBB9ffo1gBAAA=
+        H4sIAAAAAAAAA6tWKi5NTk4tLlayKikqTdVRygWyE9NTlayUHJOT80vzShSc
+        EnMS84BKlHSUUhJLEpWsqpWcQpxBVGJZYmZOYlIOSLWBngEUANXl58Vn5Oek
+        oAuX5Jck5qAK1uoohQa7YDMMwxg0A0BanR3J1FpbywUAkRGfN/oAAAA=
     http_version: 
-  recorded_at: Sat, 13 Jun 2015 23:00:21 GMT
+  recorded_at: Mon, 06 Jul 2015 00:33:11 GMT
 recorded_with: VCR 2.9.3

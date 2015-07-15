@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Cointrader::Client do
+describe Cointrader::Client, vcr: true do
   def limit_buy 
     subject.limit_buy(total_quantity: 1, price: 10)
   end
@@ -17,57 +17,33 @@ describe Cointrader::Client do
     subject.market_sell(total_amount: 1)
   end
 
-  def safe_limit_buy
-    VCR.use_cassette('limit_buy', &method(:limit_buy))
-  end
-
-  def safe_limit_sell
-    VCR.use_cassette('limit_sell', &method(:limit_sell))
-  end
-
-  def safe_market_buy
-    VCR.use_cassette('market_buy', &method(:market_buy))
-  end
-
-  def safe_market_sell
-    VCR.use_cassette('market_sell', &method(:market_sell))
-  end
-
   describe 'stats' do
     describe '#symbol' do
       it 'returns supported currencies' do
-        VCR.use_cassette('symbol') do
-          response = subject.symbol
-          expect_success(response)
-          expect(response['data'][0]['name']).to eq 'Bitcoin (BTC)'
-        end
+        response = subject.symbol
+        expect_success(response)
+        expect(response['data'][0]['name']).to eq 'Bitcoin (BTC)'
       end
     end
 
     describe '#stats_24h' do
       it 'returns 24 hour sliding statistics' do
-        VCR.use_cassette('stats_24h') do
-          response = subject.stats_24h
-          expect_success(response)
-        end
+        response = subject.stats_24h
+        expect_success(response)
       end
     end
 
     describe '#stats_7d' do
       it 'returns 7 day sliding statistics' do
-        VCR.use_cassette('stats_7d') do
-          response = subject.stats_7d
-          expect_success(response)
-        end
+        response = subject.stats_7d
+        expect_success(response)
       end
     end
 
     describe '#orders' do
       it 'returns open orders' do
-        VCR.use_cassette('orders') do
-          response = subject.orders
-          expect_success(response)
-        end
+        response = subject.orders
+        expect_success(response)
       end
     end
   end
@@ -75,21 +51,17 @@ describe Cointrader::Client do
   describe 'account' do
     describe '#balance' do
       it 'returns a balance' do
-        VCR.use_cassette('balance') do
-          response = subject.balance
+        response = subject.balance
 
-          expect_success(response)
-          expect(response['data']['BTC']['available']).not_to be_nil
-        end
+        expect_success(response)
+        expect(response['data']['BTC']['available']).not_to be_nil
       end
     end
 
     describe '#tradehistory' do
       it 'returns trade history' do
-        VCR.use_cassette('tradehistory') do
-          response = subject.tradehistory
-          expect_success(response)
-        end
+        response = subject.tradehistory
+        expect_success(response)
       end
     end
   end
@@ -97,74 +69,72 @@ describe Cointrader::Client do
   describe 'order' do
     describe '#limit_buy' do
       it 'returns an order' do
-        VCR.use_cassette('limit_buy') do
-          response = limit_buy
-          expect_success(response)
-          expect(response['data']['id']).not_to be_nil
-        end
+        response = limit_buy
+        expect_success(response)
+        expect(response['data']['id']).not_to be_nil
+      end
+
+      it 'throws an error when there are insufficient funds' do
+        expect { subject.limit_buy(price: 1_000_000, total_quantity: 1) }.to raise_error(Cointrader::InsufficientFunds)
       end
     end
 
     describe '#limit_sell' do
       it 'returns an order' do
-        VCR.use_cassette('limit_sell') do
-          response = limit_sell
-          expect_success(response)
-          expect(response['data']['id']).not_to be_nil
-        end
+        response = limit_sell
+        expect_success(response)
+        expect(response['data']['id']).not_to be_nil
       end
     end
 
     describe '#cancel' do
-      let(:order) { safe_limit_buy }
+      let(:order) { limit_buy }
 
-      it 'cancels and order' do
-        VCR.use_cassette('cancel') do
-          response = subject.cancel(order_id: order['data']['id'])
-          expect_success(response)
-          # expect(response['data']['id']).not_to be_nil
-          # expect(response['data']['currency_pair']).not_to be_nil
-        end
+      it 'cancels an order' do
+        response = subject.cancel(order_id: order['data']['id'])
+        expect_success(response)
       end
     end
 
     describe '#list' do
-      it 'lists open limit orders' do
-        VCR.use_cassette('list') do
+      context 'when there are orders' do
+        let(:order) { limit_buy }
+        after { subject.cancel(order_id: order['data']['id'] )}
+
+        it 'lists open limit orders' do
+          order
           response = subject.list
           expect_success(response)
-          # expect(response['data'][0]['type'])
+        end
+      end
+
+      context 'when there are no orders' do
+        it 'throws an error' do
+          expect { subject.list }.to raise_error(Cointrader::NoOpenOrders)
         end
       end
     end
 
     describe '#market_buy' do
       it 'returns an order' do
-        VCR.use_cassette('market_buy') do
-          response = market_buy
-          expect_success(response)
-          expect(response['message']).not_to eq('Unauthorized')
-        end
+        response = market_buy
+        expect_success(response)
+        expect(response['message']).not_to eq('Unauthorized')
       end
     end
 
     describe '#market_sell' do
       it 'returns an order' do
-        VCR.use_cassette('market_sell') do
-          response = market_sell
-          expect_success(response)
-          expect(response['message']).not_to eq('Unauthorized')
-        end
+        response = market_sell
+        expect_success(response)
+        expect(response['message']).not_to eq('Unauthorized')
       end
     end
 
     describe '#trades' do
       it 'lists recent trades executed' do
-        VCR.use_cassette('trades') do
-          response = subject.trades
-          expect_success(response)
-          # expect(response['data'][0]['price'])
-        end
+        response = subject.trades
+        expect_success(response)
       end
     end
   end

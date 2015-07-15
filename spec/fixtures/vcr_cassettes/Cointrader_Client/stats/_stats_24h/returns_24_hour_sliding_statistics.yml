@@ -1,12 +1,12 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://sandbox.cointrader.net/api4/account/balance
+    method: get
+    uri: https://sandbox.cointrader.net/api4/stats/daily/BTCUSD
     body:
       encoding: UTF-8
-      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-06-13
-        23:00:21 UTC"}'
+      string: '{"secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-07-06
+        00:33:01 UTC"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -17,7 +17,7 @@ http_interactions:
       X-Auth:
       - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
       X-Auth-Hash:
-      - 149ab2f07d5f872b8244e00a63e7978aa961760215f523c46869aba6c69b41a9
+      - 0f9b1969ee1871eb2418344706ef2ed7f88b45a0e2bccd17998da9059cf96ca3
       Content-Length:
       - '87'
       User-Agent:
@@ -28,7 +28,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 13 Jun 2015 23:00:26 GMT
+      - Mon, 06 Jul 2015 00:33:03 GMT
       Server:
       - Apache
       X-Frame-Options:
@@ -40,7 +40,7 @@ http_interactions:
       X-Powered-By:
       - ''
       Set-Cookie:
-      - CTXIDSCK=rumaii5548fj7n7g95sjggu251; path=/; HttpOnly
+      - CTXIDSCK=mjfgibep90sh6bqu74te0vjb62; path=/; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -52,15 +52,16 @@ http_interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '131'
+      - '152'
       Content-Type:
       - application/json
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA6tWKi5NTk4tLlayKikqTdVRygWyE9NTlayUHJOT80vzShSc
-        EnMS84BKlHSUUhJLEpWsqpWcQpxBVGJZYmZOYlIOSLWBngEUANXl58Vn5Oek
-        oAuX5Jck5qAK1uoohQa7YDMMwxg0A0BanR3J1FpbywUAkRGfN/oAAAA=
+        H4sIAAAAAAAAA0WOQQ7CIBBF956imXVjsLpiqR7ApPUAI9BCQkMyQF003F1a
+        UGf138ufyazgoxDKe+CBomphzhknBRy6i6bmOtye/b3pAwYPLUgMCHyFordk
+        0YeBUKoHGbGvnU9HxnL3ZeSOLOM2WblxVPTrVKnNpLNjZcu69x9wUVSeqWJx
+        Ns5frhdSSocPSZD5rccAAAA=
     http_version: 
-  recorded_at: Sat, 13 Jun 2015 23:00:26 GMT
+  recorded_at: Mon, 06 Jul 2015 00:33:04 GMT
 recorded_with: VCR 2.9.3

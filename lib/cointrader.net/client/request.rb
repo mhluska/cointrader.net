@@ -39,8 +39,10 @@ module Cointrader
     end
 
     def request(method, path, body={})
-      JSON.parse(hmac_request(method, path, body))
+      check_errors(JSON.parse(hmac_request(method, path, body)))
     end
+
+    private
 
     def hmac_request method, path, body={}
       payload = {}
@@ -76,6 +78,33 @@ module Cointrader
         payload: payload.to_json,
         headers: headers,
       )
+    end
+
+    # Returns the error code from `response` or `nil` if there is none.
+    def extract_error_code response
+      return unless response
+      return unless response['data'] && response['data'].class == Hash
+      return unless response['data']['errorCode']
+
+      response['data']['errorCode'].to_i
+    end
+
+    def check_errors response
+      code = extract_error_code(response)
+
+      if code
+        errorClass = 
+          case code
+          when 401      then Unauthorized
+          when 802, 803 then InsufficientFunds # Fiat, Crypto respectively.
+          when 801      then NoOpenOrders
+          else Error
+          end
+
+        raise errorClass.new(response['message'])
+      end
+
+      response
     end
   end
 end

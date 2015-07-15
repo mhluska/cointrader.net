@@ -2,11 +2,11 @@
 http_interactions:
 - request:
     method: post
-    uri: https://sandbox.cointrader.net/api4/order/BTCUSD/cancel
+    uri: https://sandbox.cointrader.net/api4/order/BTCUSD/sell
     body:
       encoding: UTF-8
-      string: '{"order_id":"2222321","secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-06-13
-        23:01:51 UTC"}'
+      string: '{"total_quantity":"1.00000000","price":"10.00","secret":"2MlxW8mUU9MG4bvq7C6M4PSd5J8SaauW4H2dXnyJyAcN","t":"2015-07-06
+        00:33:21 UTC"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -17,9 +17,9 @@ http_interactions:
       X-Auth:
       - nCsNvmrxTpYFnJQyU16gq6R9ncOUA6UhF4wZnuf7IqkL
       X-Auth-Hash:
-      - f6f960802d0ec32112a9b5c659ceac1a46cbe62ad22bdc38070451fa0c09ae50
+      - 95aafb4b9218ba49aa2047ab1967d613190e7aa2187ea5f15c090f32d5931d86
       Content-Length:
-      - '108'
+      - '133'
       User-Agent:
       - Ruby
   response:
@@ -28,7 +28,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 13 Jun 2015 23:01:53 GMT
+      - Mon, 06 Jul 2015 00:33:23 GMT
       Server:
       - Apache
       X-Frame-Options:
@@ -40,7 +40,7 @@ http_interactions:
       X-Powered-By:
       - ''
       Set-Cookie:
-      - CTXIDSCK=pmv8crr36dojr43dlq3784r1d1; path=/; HttpOnly
+      - CTXIDSCK=e40olep7ks6uvfp1g24j0a8572; path=/; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -52,15 +52,15 @@ http_interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '114'
+      - '132'
       Content-Type:
       - application/json
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA6tWKi5NTk4tLlaySkvMKU7VUcoFchLTU5WslPyLUlKLFPzy
-        SxTc8kvzUpR0lFISSxKVrKqVUouK8ouc81NAqiwMDJSQdYVkpCrkg3Wm5KcW
-        56mXKKRWZBaX6CnV1nIBAHEGK69uAAAA
+        H4sIAAAAAAAAA6tWKi5NTk4tLlaySkvMKU7VUcoFchLTU5WslIJTc3IU/ItS
+        UosUXIuK8ousFDzzikvT0jKTM1PzShTcSvNSivUUglJzEzPzMvPSrRQM9Ayg
+        QEFJRyklsSRRyapaKRWk1zk/BWSkhYGxErIVJBhYW8sFAJVCnnqtAAAA
     http_version: 
-  recorded_at: Sat, 13 Jun 2015 23:01:55 GMT
+  recorded_at: Mon, 06 Jul 2015 00:33:24 GMT
 recorded_with: VCR 2.9.3

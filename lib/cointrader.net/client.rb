@@ -2,6 +2,7 @@ require_relative 'client/request'
 require_relative 'client/stats'
 require_relative 'client/account'
 require_relative 'client/order'
+require_relative 'client/error'
 
 module Cointrader
   class Client
