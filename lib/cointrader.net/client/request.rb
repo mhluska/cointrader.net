@@ -96,12 +96,12 @@ module Cointrader
         errorClass = 
           case code
           when 401      then Unauthorized
-          when 802, 803 then InsufficientFunds # Fiat, Crypto respectively.
+          when 802, 803 then InsufficientFunds # 802 fiat, 803 crypto
           when 801      then NoOpenOrders
           else Error
           end
 
-        raise errorClass.new(response['message'])
+        raise errorClass.new(code.to_s + ' ' + response['message'])
       end
 
       response
