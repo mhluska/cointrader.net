@@ -95,9 +95,12 @@ module Cointrader
       if code
         errorClass = 
           case code
-          when 401      then Unauthorized
-          when 802, 803 then InsufficientFunds # 802 fiat, 803 crypto
-          when 801      then NoOpenOrders
+          when 401 then Unauthorized
+          when 801 then NoOpenOrders
+          when 802 then LimitBuyError
+          when 803 then LimitSellError
+          when 804 then MarketBuyError
+          when 805 then MarketSellError
           else Error
           end
 

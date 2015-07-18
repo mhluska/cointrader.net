@@ -75,7 +75,7 @@ describe Cointrader::Client, vcr: true do
       end
 
       it 'throws an error when there are insufficient funds' do
-        expect { subject.limit_buy(price: 1_000_000, total_quantity: 1) }.to raise_error(Cointrader::InsufficientFunds)
+        expect { subject.limit_buy(price: 1_000_000, total_quantity: 1) }.to raise_error(Cointrader::LimitBuyError)
       end
     end
 
