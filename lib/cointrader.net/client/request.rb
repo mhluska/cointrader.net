@@ -97,6 +97,7 @@ module Cointrader
           case code
           when 401 then Unauthorized
           when 799 then CouldNotCancelOrder
+          when 800 then OrderNotFound
           when 801 then NoOpenOrders
           when 802 then LimitBuyError
           when 803 then LimitSellError
